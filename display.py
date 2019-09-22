@@ -4,7 +4,7 @@
 
 import configparser
 import tm1637
-from sys import sleep
+from time import sleep
 
 config = configparser.ConfigParser()
 config.read('config/appconfig.ini')
