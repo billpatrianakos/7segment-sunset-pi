@@ -9,8 +9,8 @@ from time import sleep
 config = configparser.ConfigParser()
 config.read('config/appconfig.ini')
 
-CLK = config['GPIO']['clk']
-DIO = config['GPIO']['dio']
+CLK = int(config['GPIO']['clk'])
+DIO = int(config['GPIO']['dio'])
 
 tm = tm1637.TM1637(clk=CLK, dio=DIO)
 
